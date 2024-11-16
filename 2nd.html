@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inheritance</title>
+        <style>
+            body{
+                background: bisque;
+            }
+            .d{
+                color: red;
+            }
+            #c{
+                color: darkmagenta;
+            }
+            .r{
+                color: blue;
+            }
+            #v{
+                color: blue;
+            }
+            .m{
+                color: red;
+            }
+            .l{
+                color: darkcyan;
+            }
+            .k{
+                color: rgb(0, 86, 139);
+            }
+            .j{
+                color: blueviolet;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h4>6.1.1 inheritance</h4>
+        <h4 class="d">inheritance in java</h4>
+        <p>Inheritance is the process that enables one class to acquire
+            the properties <strong> (methods and variables) </strong>of another.
+            With inheritance, the information is placed in a more
+             manageable, hierarchical order.
+        </p>
+        <p>The class inheriting the properties of another
+             is the <strong>subclass </strong>
+            (also called derived class, or child class); 
+            the class whose properties are inherited is 
+            the <strong> superclass </strong>(base class, or parent class).</p>
+        <p>To inherit from a class, use the (extend) keyword. 
+                This example shows how to have the class Dog 
+                to inherit from the class Animal.</p>
+                class Dog <strong id="c">extends</strong> Animal {<br>
+                   <p id="v">// code block </p> 
+                    }
+                    <p>Here, Dog is the subclass(child class), and 
+    Animal is the superclass(parent class).</p>
+    <strong class="r">uses of inheritance:</strong>
+    <p>->For Method Overriding (so runtime polymorphism 
+    can be achieved).</p>
+    <p>->For Code Reusability.</p>
+    <strong class="r">Terms used in Inheritance</strong>
+    <p><p class="m">Class</p>: A class is a group of objects which have common properties. 
+    It is a template or blueprint from which objects are created.</p>
+    <p><p class="m">Sub Class/Child Class</p>: Subclass is a class which inherits the other class. 
+    It is also called a derived class, extended class, or child class.</p>
+    <p><p class="m">Super Class/Parent Class</p>: Superclass is the class from where a subclass inherits the features.
+    It is also called a base class or a parent class.</p>
+    <p><p class="m">Reusability</p>: As the name specifies, 
+        reusability is a mechanism which facilitates you to
+         reuse the fields and methods of the existing class
+          when you create a new class. You can use the same fields
+           and methods already defined in the previous class.
+        </p>
+    <h4 class="d">Single Inheritance Example:</h4>
+
+<strong class="k">class </strong><strong class="l">Animal</strong> {<br>
+
+<strong class="k">void</strong> <strong class="j"> eat</strong>(){<br>
+
+System.out.println("<strong class="m">eating...</strong>");<br>
+
+}  }<br>
+
+<p><strong class="k">class</strong> <strong class="l"> Dog</strong> <strong class="k"> extends</strong>Animal{</p>
+
+<p><strong class="k">void</strong> <strong class="j"> bark</strong>(){</p>
+
+<p>System.out.println(" <strong class="m">barking...</strong>");</p>
+
+}}
+
+<p><strong class="k">class</strong> <strong class="l"> TestInheritance</strong>{</p>
+
+<p><strong class="k">public static void</strong> <strong class="j"> main</strong>(String args[]){</p>
+
+<p>Dog d= <strong class="k">new</strong> Dog()</p>;<br>
+
+<p>d.bark(); d.eat();</p><br>
+
+} }
+
+
+<h5>Output:</h5>
+<h5>barking...</h5>
+<h5>eating...</h5>
+
+<p>Real World Example Diagram:</p>
+<img src="inheritance.PNG" alt=" here we go.">
+        
+    </body>
+</html>
